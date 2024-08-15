@@ -8,3 +8,9 @@ npm install
 ```sh
 PORT=4567 npm start
 ```
+
+### Rum Postgres Server
+```sh
+docker compose up
+```
+
