@@ -3,8 +3,14 @@ const app = express()
 const path = require('path')
 const port = process.env.PORT
 
+app.use(express.json());
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+app.put('/submit', function(req, res) {
+  console.log(req.body);
 });
 
 app.get('/style.css', function(req, res) {
