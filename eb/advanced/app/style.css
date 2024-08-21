@@ -24,6 +24,7 @@ main {
   padding: 40px 0;
 }
 
+.progress,
 article {
   width: 660px;
   margin: 0px auto;
@@ -76,4 +77,29 @@ article {
 }
 .submit button:hover {
   background: #984aff;
+}
+
+.progress {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.reset_wrapper {
+  width: 660px;
+  margin: 0px auto;
+  margin-top: 12px;
+}
+button.reset {
+  background: #838383;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button.reset:hover {
+  background: #515151;
 }
