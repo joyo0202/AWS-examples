@@ -73,8 +73,7 @@ app.put('/reset', async function(req, res) {
           LIMIT 1
         ) as question_index`
     );
-
-    res.json({total_answers: 0, score: 0});
+    res.json(data.rows[0]);
   } catch (err) {
     console.log(err);
     res.status(500).send('Failed to reset answers')

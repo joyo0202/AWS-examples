@@ -66,7 +66,7 @@ var Choice = {
 }
 var App = {
   oninit: Data.questions.fetch,
-  reset: function() {
+  reset: function(){
     m.request({
       method: "PUT",
       url: "/reset"
@@ -86,7 +86,7 @@ var App = {
         body: {
           question_uuid: Data.question_index, 
           choice: Data.selected.toUpperCase()
-        },
+        }
     })
     .then(function(data) {
       console.log('data',data)
